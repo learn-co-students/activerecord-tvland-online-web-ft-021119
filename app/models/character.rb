@@ -7,12 +7,12 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{phrase}"
   end
 
-  def build_show(arg)
-    new_show = Show.new(arg)
-    self.show = new_show
-  end
-
-  def build_network
-binding.pry
-  end
+#   def build_show(arg)
+#     new_show = Show.new(arg)
+#     self.show = new_show
+#   end
+#
+#   def build_network(thing)
+# # binding.pry
+#   end
 end
