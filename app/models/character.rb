@@ -8,7 +8,11 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(arg)
-    binding.pry
-    self.show.name
+    new_show = Show.new(arg)
+    self.show = new_show
+  end
+
+  def build_network(arg)
+binding.pry
   end
 end
