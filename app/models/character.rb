@@ -12,7 +12,7 @@ class Character < ActiveRecord::Base
     self.show = new_show
   end
 
-  def build_network(arg)
+  def build_network
 binding.pry
   end
 end
